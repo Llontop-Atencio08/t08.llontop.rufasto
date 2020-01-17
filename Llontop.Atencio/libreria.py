@@ -86,3 +86,16 @@ def validar_estacion(strEstacion):
     else:
         return False       #No es str
 #fin_validar_mes
+
+
+# Funcion   : Devuelve el bono por calificacion
+# Parametros: strCalif => Calificacion
+# Retorna   : float
+def GanoBoleto(strCalif):
+    if ( strCalif == "PERFECTO!"):
+        return 20.0
+    if ( strCalif == "LO SENTIMOS"):
+        return  10.0
+    else:
+        return 0.0
+#fin_obtenerDescuento

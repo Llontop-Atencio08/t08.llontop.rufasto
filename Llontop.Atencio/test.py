@@ -47,3 +47,12 @@ assert (libreria.validar_estacion("VERANO") == True)
 assert (libreria.validar_estacion("INVIERNO") == True)
 assert (libreria.validar_estacion("PRIMAVERA") == True)
 print("validar_estacion OK")
+
+
+
+assert ((libreria.GanoBoleto ("PERFECTO") == 20.0)== False)
+assert ((libreria.GanoBoleto ("LO SENTIMOS") == 10.0)== True)
+assert ((libreria.GanoBoleto ("PERFECTO") == 10.0)== False)
+assert ((libreria.GanoBoleto ("LO SENTIMOS") == 20.0)== False)
+assert ((libreria.GanoBoleto ("") == 20.0)== False)
+print("GanoBoleto OK")
