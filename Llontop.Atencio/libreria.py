@@ -44,3 +44,17 @@ def validar_mes(strMes):
     else:
         return False       #No es str
 #fin_validar_mes
+
+
+#ejercicio4
+def validar_apellido(strApellido):
+    #El tipo de dato es strApellido es str
+    #La longitud de de la cadena es al menos 6
+    if (isinstance(strApellido,str)):
+        if (len(strApellido) >= 6):
+            return True     #Es un apellido valido
+        else:
+            return False    #Insuficiente caracteres
+    else:
+        return False        #No es str
+#fin_validar_apellido

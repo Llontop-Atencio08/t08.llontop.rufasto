@@ -22,3 +22,11 @@ assert (libreria.validar_mes("JULIO") == True)
 assert (libreria.validar_mes("AGOSTO") == True)
 assert (libreria.validar_mes("OCTUBRE") == True)
 print("validar_mes OK")
+
+
+assert (libreria.validar_apellido("") == False)
+assert (libreria.validar_apellido("LLONTOP") == True)
+assert (libreria.validar_apellido("OLIVA") == False)
+assert (libreria.validar_apellido("ATENCIO") == True)
+assert (libreria.validar_apellido("AYALA") == False)
+print("validar_apellido OK")
