@@ -11,3 +11,6 @@ descuento=(libreria * prestamo)
 
 # OUTPUT
 libreria.reporte_prestamo(nombre, prestamo, descuento)
+
+
+#ejercicio2
