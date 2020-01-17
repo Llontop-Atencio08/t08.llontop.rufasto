@@ -58,3 +58,17 @@ def validar_apellido(strApellido):
     else:
         return False        #No es str
 #fin_validar_apellido
+
+
+#ejercicio5
+# Funcion   : Devuelve el bono por calificacion
+# Parametros: strCalif => Calificacion
+# Retorna   : float
+def obtenerDescuento(strCalif):
+    if ( strCalif == "FELICIDADES"):
+        return 200.0
+    if ( strCalif == "MUY BIEN"):
+        return  100.0
+    else:
+        return 0.0
+#fin_obtenerDescuento

@@ -30,3 +30,11 @@ assert (libreria.validar_apellido("OLIVA") == False)
 assert (libreria.validar_apellido("ATENCIO") == True)
 assert (libreria.validar_apellido("AYALA") == False)
 print("validar_apellido OK")
+
+
+assert ((libreria.obtenerDescuento ("FELICIDADES") == 200.0)== True)
+assert ((libreria.obtenerDescuento ("MUY BIEN") == 100.0) == True)
+assert ((libreria.obtenerDescuento ("FELICICDADES") == 100.0) == False)
+assert ((libreria.obtenerDescuento ("MUY BIEN") == 200.0) == False)
+assert ((libreria.obtenerDescuento ("FELICIDADES") == 0.0)  ==False)
+print("obtenerDescuento OK")
