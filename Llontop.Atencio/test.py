@@ -14,3 +14,11 @@ assert (libreria.validar_edad(60) == True)
 assert (libreria.validar_edad(11) == False)
 assert (libreria.validar_edad(19) == False)
 print("validar_edad OK")
+
+
+assert (libreria.validar_mes("") == False)
+assert (libreria.validar_mes("MAYO") == False)
+assert (libreria.validar_mes("JULIO") == True)
+assert (libreria.validar_mes("AGOSTO") == True)
+assert (libreria.validar_mes("OCTUBRE") == True)
+print("validar_mes OK")

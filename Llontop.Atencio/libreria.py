@@ -30,3 +30,17 @@ def validar_edad(intEdad):
     else:
         return False   #No es int
 #fin_validar_edad
+
+
+#ejercicio3
+def validar_mes(strMes):
+    #El tipo de dato es strMes es str
+    #La longitud de la cadena es al menos 5
+    if (isinstance(strMes,str)):
+        if(len(strMes) >=5):
+            return True     #Es un mes valido
+        else:
+            return False    #Insuficiente caracteres
+    else:
+        return False       #No es str
+#fin_validar_mes
