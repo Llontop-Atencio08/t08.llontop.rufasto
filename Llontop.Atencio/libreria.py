@@ -72,3 +72,17 @@ def obtenerDescuento(strCalif):
     else:
         return 0.0
 #fin_obtenerDescuento
+
+
+#ejercicio6
+def validar_estacion(strEstacion):
+    #El tipo de dato es strMes es str
+    #La longitud de la cadena es al menos 6
+    if (isinstance(strEstacion,str)):
+        if(len(strEstacion) >=6):
+            return True     #Es un mes valido
+        else:
+            return False    #Insuficiente caracteres
+    else:
+        return False       #No es str
+#fin_validar_mes

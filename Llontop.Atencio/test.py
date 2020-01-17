@@ -38,3 +38,12 @@ assert ((libreria.obtenerDescuento ("FELICICDADES") == 100.0) == False)
 assert ((libreria.obtenerDescuento ("MUY BIEN") == 200.0) == False)
 assert ((libreria.obtenerDescuento ("FELICIDADES") == 0.0)  ==False)
 print("obtenerDescuento OK")
+
+
+
+assert (libreria.validar_estacion("") == False)
+assert (libreria.validar_estacion("OTOÑO") == False)
+assert (libreria.validar_estacion("VERANO") == True)
+assert (libreria.validar_estacion("INVIERNO") == True)
+assert (libreria.validar_estacion("PRIMAVERA") == True)
+print("validar_estacion OK")

@@ -13,4 +13,3 @@ descuento=(libreria * prestamo)
 libreria.reporte_prestamo(nombre, prestamo, descuento)
 
 
-#ejercicio2
