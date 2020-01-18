@@ -66,8 +66,8 @@ assert (libreria.descuento("", 30.0) == False)
 print("gano jugo OK")
 
 
-assert ((libreria.GanoBoleto ("FELICIDADES") == 30.0)== True)
-assert ((libreria.GanoBoleto ("LO SENTIMOS") == 15.0)== True)
+assert ((libreria.GanoBoleto ("FELICIDADES") == 30.0)== False)
+assert ((libreria.GanoBoleto ("LO SENTIMOS") == 15.0)== False)
 assert ((libreria.GanoBoleto ("FELICIDADES") == 15.0)== False)
 assert ((libreria.GanoBoleto ("LO SENTIMOS") == 30.0)== False)
 assert ((libreria.GanoBoleto ("") == 30.0)== False)
@@ -80,3 +80,11 @@ assert (libreria.validar_edad(2009) == False)
 assert (libreria.validar_edad(2031) == True)
 assert (libreria.validar_edad(2019) == False)
 print("validar_anio OK")
+
+
+assert (libreria.validar_codigo ("ena") == False)
+assert (libreria.validar_codigo ("valentina") == False)
+assert (libreria.validar_codigo ("vanesa") == True)
+assert (libreria.validar_codigo ("dedo") == False)
+assert (libreria.validar_codigo ("mesa") == False)
+print("validar codigo OK")

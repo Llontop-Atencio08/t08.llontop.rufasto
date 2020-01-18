@@ -142,3 +142,15 @@ def validar_anio(intAnio):
     else:
         return False   #No es int
 #fin_validar_anio
+
+
+#ejercicio11
+def validar_codigo(strCodigo):
+    #1.strCodigo es una cadena de 6 caracteres
+    #2.El primer caracter de strCodigo es el signo #
+    if (len(strCodigo)!=6):
+        return False
+    if(strCodigo[0]=="#"):
+        return True
+    #fin_if
+#fin_validar_codigo
