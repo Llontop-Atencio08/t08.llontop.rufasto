@@ -154,3 +154,17 @@ def validar_codigo(strCodigo):
         return True
     #fin_if
 #fin_validar_codigo
+
+
+#ejercicio12
+def validar_ganadero(strGanadero):
+    #1.El tipo de dato es strGanadero es str
+    #2.L alongitud de la cadenaes al menos de 4
+    if (isinstance(strGanadero,str)):
+        if (len(strGanadero)>=4):
+            return True    #es u nombre valido
+        else:
+            return False   #insuficiente caracrteres
+    else:
+        return False       #No es str
+#fin_validar_ganadero

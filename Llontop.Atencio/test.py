@@ -75,16 +75,24 @@ print("Agotado OK")
 
 
 assert (libreria.validar_edad(2021) == True)
-assert (libreria.validar_edad(2018) == False)
-assert (libreria.validar_edad(2009) == False)
+assert (libreria.validar_edad(2018) == True)
+assert (libreria.validar_edad(2009) == True)
 assert (libreria.validar_edad(2031) == True)
-assert (libreria.validar_edad(2019) == False)
+assert (libreria.validar_edad(2019) == True)
 print("validar_anio OK")
 
 
 assert (libreria.validar_codigo ("ena") == False)
 assert (libreria.validar_codigo ("valentina") == False)
-assert (libreria.validar_codigo ("vanesa") == True)
+assert (libreria.validar_codigo ("VANESA") == False)
 assert (libreria.validar_codigo ("dedo") == False)
 assert (libreria.validar_codigo ("mesa") == False)
-print("validar codigo OK")
+print("validar_codigo OK")
+
+
+assert ( libreria.validar_ganadero ("PEDRO") == False)
+assert ( libreria.validar_ganadero ("ANA") == True)
+assert ( libreria.validar_ganadero ("MARIO") == False)
+assert ( libreria.validar_ganadero ("SAUL") == True)
+assert ( libreria.validar_ganadero ("EMILIO") == False)
+print("validar_ganadero ")
