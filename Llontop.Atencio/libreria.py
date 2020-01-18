@@ -128,3 +128,17 @@ def Gano_jugo(strPromedio):
     else:
         return 0.0
 #fin_agotado
+
+
+#ejercicio10
+def validar_anio(intAnio):
+    #1.El tipo de dato es intAnio es int
+    #2.La longitud del entero es al menos de 2020
+    if (isinstance(intAnio,int)):
+        if((intAnio) >= 2020):
+            return True   #Es anio valido
+        else:
+            return False  #Insuficiencia caracteres
+    else:
+        return False   #No es int
+#fin_validar_anio
