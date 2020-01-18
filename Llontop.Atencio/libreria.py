@@ -117,3 +117,14 @@ def reporte_prestamo(cliente, monto,descuento):
     print("# Precio: S/." "+ str(precio)+")
     print("# Descuento: S/." + str(descuento)+"")
     print("#########################")
+
+
+#ejercicio9
+def Gano_jugo(strPromedio):
+    if ( strPromedio == "FELICIDADES"):
+        return 30.0
+    if ( strPromedio == "LO SENTIMOS"):
+        return  15.0
+    else:
+        return 0.0
+#fin_agotado

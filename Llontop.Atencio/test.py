@@ -58,9 +58,17 @@ assert ((libreria.GanoBoleto ("") == 20.0)== False)
 print("GanoBoleto OK")
 
 
-assert (libreria.descuento("A", 100) == 0)
-assert (libreria.descuento("Excelente", 100) == 10.0)
-assert (libreria.descuento("EXCELENTE", 100) == 10.0)
-assert (libreria.descuento("ExCeLeNtE", 100) == 10.0)
-assert (libreria.descuento("", 100) == 0)
-print("descuento OK")
+assert (libreria.descuento("FELICIDADES", 30.0) == False)
+assert (libreria.descuento("FELICIDADES", 15.0) == False)
+assert (libreria.descuento("LO SENTIMOS", 30.0) == False)
+assert (libreria.descuento("LO SENTIMOS", 15.0) == False)
+assert (libreria.descuento("", 30.0) == False)
+print("gano jugo OK")
+
+
+assert ((libreria.GanoBoleto ("FELICIDADES") == 30.0)== False)
+assert ((libreria.GanoBoleto ("LO SENTIMOS") == 15.0)== False)
+assert ((libreria.GanoBoleto ("FELICIDADES") == 15.0)== False)
+assert ((libreria.GanoBoleto ("LO SENTIMOS") == 30.0)== False)
+assert ((libreria.GanoBoleto ("") == 30.0)== False)
+print("Agotado OK")
